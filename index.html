@@ -10,7 +10,7 @@
   <title>Feed</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -33,14 +33,16 @@
               </div>
               <div class="modal-body bg-light">
                 <p class="fs-20 text-secondary">Post:</p>
-                <textarea class="fs-10 text-secondary" name="comentarios" rows="10"
-                  cols="50">Añadir aquí el texto para el post.</textarea>
+                <textarea class="fs-10 text-secondary" name="comentarios" rows="10" cols="50"
+                  placeholder="Añade aquí el texto"></textarea>
               </div>
               <div class="container">
                 <div class="row">
-                  <div class="col-1 border rounded"><span><i class="fa-solid fa-camera"></i></span>
+                  <div class="col-1 m-2"> <button type="button" class="border border-1 rounded btn btn-light"><i
+                        class="fa-solid fa-camera"></i></button>
                   </div>
-                  <div class="col-1 border rounded"><span><i class="fa-solid fa-location-dot "></i></span>
+                  <div class="col-1  m-2"><button type="button" class="border border-1 rounded btn btn-light"><i
+                        class="fa-solid fa-location-dot "></i></button>
                   </div>
                 </div>
               </div>
@@ -69,83 +71,243 @@
   <br>
   <br>
   <br>
-  <!-- Feed -->
-  <!-- iconos -->
-  <div class="container">
-    <div class="row">
-      <div class="col-5"></div>
-      <div id="iconLeft" class="col-1 text-center"><i class="fa-solid  fa-table-cells iconsHeader"></i></a>
 
-      </div>
-      <div id="iconRight" class="col-1 text-center"><a href="/posts.html">
-          <i class="fa-regular text-center fa-square mr-1"></i></a>
-      </div>
+  <!-- Nav tab -->
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="Feed" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="posts" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+    </li>
 
-
-
-      <div class="col-5"></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
-        <div class="container">
-
-        </div>
-        <div class="container feed">
-          <div class="row">
-            <div class="col-4 p-1">
-
-              <a href="posts.html#Album006"><img class="img-fluid " src="/content/Dp-Album006.jpg" alt="Album 006"></a>
+  </ul>
+  <br>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container" id="Feed">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="container">
 
             </div>
-            <div class="col-4 p-1">
-              <a href="posts.html#Album005"><img class="img-fluid " src="/content/Dp-Album005.jpg" alt="Album 005"></a>
-            </div>
-            <div class="col-4 p-1">
-              <a href="posts.html#Album018"><img class="img-fluid " src="/content/Dp-Album018.jpg" alt="Album 018"></a>
-              <div class="icon-overlay position-absolute top-50 start-50 translate-middle">
-                <i class="bi bi-heart-fill text-white fs-1"></i>
+            <div class="container feed">
+              <div class="row">
+                <div class="col-4 p-1">
+
+                  <img class="img-fluid " src="/content/Dp-Album006.jpg" alt="Album 006">
+
+                </div>
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/Dp-Album005.jpg" alt="Album 005"></a>
+                </div>
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/Dp-Album018.jpg" alt="Album 018">
+                  <div class="icon-overlay position-absolute top-50 start-50 translate-middle">
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4 p-1">
-              <a href="posts.html#Album023"><img class="img-fluid " src="/content/Dp-Album023.jpg" alt="Album 023"></a>
-            </div>
-            <div class="col-4 p-1">
-              <a href="posts.html#Album024"><img class="img-fluid " src="/content/Dp-Album024.jpg" alt="Album 023"></a>
-            </div>
-            <div class="col-4 p-1">
-              <a href="posts.html#Album033"><img class="img-fluid " src="/content/Dp-Album033.jpg" alt="Album 033"></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4 p-1">
-              <a href="posts.html#perpetuo"><img class="img-fluid " src="/content/perpetuo.webp" alt="perpetuo"></a>
-            </div>
-            <div class="col-4 p-1">
-              <a href="posts.html#albumes"><img class="img-fluid " src="/content/albumes.webp" alt="albumes"></a>
-            </div>
-            <div class="col-4 p-1">
-              <a href="posts.html#caja-iman"><img class="img-fluid " src="/content/caja-iman.webp" alt="caja-iman"></a>
-            </div>
-            <div class="col-4 p-1">
-              <a href="posts.html#caja-iman"><img class="img-fluid " src="/content/caja-iman.webp" alt="caja-iman"></a>
-            </div>
-          </div>
+              <div class="row">
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/Dp-Album023.jpg" alt="Album 023">
+                </div>
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/Dp-Album024.jpg" alt="Album 023">
+                </div>
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/Dp-Album033.jpg" alt="Album 033">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/perpetuo.webp" alt="perpetuo">
+                </div>
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/albumes.webp" alt="albumes">
+                </div>
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/caja-iman.webp" alt="caja-iman">
+                </div>
+                <div class="col-4 p-1">
+                  <img class="img-fluid " src="/content/caja-iman.webp"
+                      alt="caja-iman">
+                </div>
+              </div>
 
 
+            </div>
+
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="container" id="posts">
+        <div class="row mt-3" id="Album006">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="border rounded">
+
+              <div style="width: 100%; display: flex; justify-content: space-between;">
+
+                <h5 class=" p-3 text-secondary fw-normal">Interior caja madera</h5>
+                <p class="p-3 text-secondary fw-lighter fs-">24.06.2024</p>
+              </div>
+
+              <img class="img-fluid w-20" src="/content/Dp-Album006.jpg" alt="Album005">
+              <h5 class="p-2 text-secondary">204 Likes</h5>
+              <p class="p-3 fs-20 text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Temporibus,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-3" id="Album005">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="border rounded">
+
+              <div style="width: 100%; display: flex; justify-content: space-between;">
+
+                <h5 class=" p-3 text-secondary fw-normal">Pack Navidad </h5>
+                <p class="p-3 text-secondary fw-lighter fs-">24.06.2024</p>
+              </div>
+
+              <img class="img-fluid w-20" src="/content/Dp-Album005.jpg" alt="Album005">
+              <h5 class="p-2 text-secondary">1500 Likes</h5>
+              <p class="p-3 fs-20 text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Temporibus,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-3" id="Album018">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="border rounded">
+
+              <div style="width: 100%; display: flex; justify-content: space-between;">
+
+                <h5 class=" p-3 text-secondary fw-normal">Bolsa para copias </h5>
+                <p class="p-3 text-secondary fw-lighter fs-">24.06.2024</p>
+              </div>
+
+              <img class="img-fluid w-20" src="/content/Dp-Album018.jpg" alt="Album003">
+              <h5 class="p-2 text-secondary">1500 Likes</h5>
+              <p class="p-3 fs-20 text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Temporibus,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-3" id="Album023">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="border rounded">
+
+              <div style="width: 100%; display: flex; justify-content: space-between;">
+
+                <h5 class=" p-3 text-secondary fw-normal">Carpeta Velvet</h5>
+                <p class="p-3 text-secondary fw-lighter fs-">24.06.2024</p>
+              </div>
+
+              <img class="img-fluid w-20" src="/content/Dp-Album023.jpg" alt="Album003">
+              <h5 class="p-2 text-secondary">1500 Likes</h5>
+              <p class="p-3 fs-20 text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Temporibus,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-3" id="Album024">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="border rounded">
+
+              <div style="width: 100%; display: flex; justify-content: space-between;">
+
+                <h5 class=" p-3 text-secondary fw-normal">Carpeta velvet abierta</h5>
+                <p class="p-3 text-secondary fw-lighter fs-">24.06.2024</p>
+              </div>
+
+              <img class="img-fluid w-20" src="/content/Dp-Album024.jpg" alt="Album003">
+              <h5 class="p-2 text-secondary">60 Likes</h5>
+              <p class="p-3 fs-20 text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Temporibus,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-3" id="Album033">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="border rounded">
+
+              <div style="width: 100%; display: flex; justify-content: space-between;">
+
+                <h5 class=" p-3 text-secondary fw-normal">Photo film</h5>
+                <p class="p-3 text-secondary fw-lighter fs-">25.06.2024</p>
+              </div>
+
+              <img class="img-fluid w-20" src="/content/Dp-Album033.jpg" alt="Album003">
+              <h5 class="p-2 text-secondary">60 Likes</h5>
+              <p class="p-3 fs-20 text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Temporibus,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+        <div class="row mt-3" id="perpetuo">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="border rounded">
+
+              <div style="width: 100%; display: flex; justify-content: space-between;">
+
+                <h5 class=" p-3 text-secondary fw-normal">Photo film</h5>
+                <p class="p-3 text-secondary fw-lighter fs-">25.06.2024</p>
+              </div>
+
+              <img class="img-fluid w-20" src="/content/perpetuo.webp" alt="Album003">
+              <h5 class="p-2 text-secondary">60 Likes</h5>
+              <p class="p-3 fs-20 text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Temporibus,
+                explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="col-4"></div>
         </div>
 
+
       </div>
-      <div class="col-2"></div>
     </div>
+
   </div>
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
