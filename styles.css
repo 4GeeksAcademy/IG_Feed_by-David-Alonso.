@@ -1,0 +1,41 @@
+/* h1 {
+    color: red;
+}
+
+
+/* #feed {
+    min-height: 100px;
+    max-height: 100px;
+    background-size: cover;
+    background-position: center;
+  }    */
+
+/* div {
+    border: 2px solid red;
+  } */
+/* #iconLeft {
+    display: flex;
+    justify-content: right;
+  }
+#iconRight {
+    display: flex;
+    justify-content: left;
+  }
+.color {
+    background-color: rgb(233, 231, 231);
+  } */
+  /* div {
+    border: 1px solid red;
+} */
+/* .iconsHeader {
+  font-size: 25px;
+  color: rgb(95, 99, 99);
+}  */
+
+img {
+  transition: 0,8s ease;
+}
+img:hover {
+  transition: 0,6s ease;
+  filter: brightness(70%);
+}

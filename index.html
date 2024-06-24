@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand danger"><i class="fa-brands fa-instagram m-2"></i>Instagram</a>
+      <div>
+        <button type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Nuevo post
+        </button>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="modal-title fs-10 text-secondary" id="staticBackdropLabel">Crear nuevo post</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body bg-light">
+                <p class="fs-20 text-secondary">Post:</p>
+                <textarea class="fs-10 text-secondary" name="comentarios" rows="10"
+                  cols="50">Añadir aquí el texto para el post.</textarea>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-1 border rounded"><span><i class="fa-solid fa-camera"></i></span>
+                  </div>
+                  <div class="col-1 border rounded"><span><i class="fa-solid fa-location-dot "></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success">Publicar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-secondary dropdown-toggle mt-1" type="button" data-bs-toggle="dropdown"
+          id="dropdownMenuButton" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="http://dpalbum.es">Ir a Dp álbum</a></li>
+          <li><a class="dropdown-item" href="http://piedrapapelytijeras.es">Ir a Piedra papel y tijeras</a></li>
+          <li><a class="dropdown-item" href="http://imprimefotografia.es">Ir a Imprime fotografía</a></li>
+          <hr>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </div>
+
+  </nav>
+  <br>
+  <br>
+  <br>
+  <!-- Feed -->
+  <!-- iconos -->
+  <div class="container">
+    <div class="row">
+      <div class="col-5"></div>
+      <div id="iconLeft" class="col-1 text-center"><i class="fa-solid  fa-table-cells iconsHeader"></i></a>
+
+      </div>
+      <div id="iconRight" class="col-1 text-center"><a href="/posts.html">
+          <i class="fa-regular text-center fa-square mr-1"></i></a>
+      </div>
+
+
+
+      <div class="col-5"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="container">
+
+        </div>
+        <div class="container feed">
+          <div class="row">
+            <div class="col-4 p-1">
+
+              <a href="posts.html#Album006"><img class="img-fluid " src="/content/Dp-Album006.jpg" alt="Album 006"></a>
+
+            </div>
+            <div class="col-4 p-1">
+              <a href="posts.html#Album005"><img class="img-fluid " src="/content/Dp-Album005.jpg" alt="Album 005"></a>
+            </div>
+            <div class="col-4 p-1">
+              <a href="posts.html#Album018"><img class="img-fluid " src="/content/Dp-Album018.jpg" alt="Album 018"></a>
+              <div class="icon-overlay position-absolute top-50 start-50 translate-middle">
+                <i class="bi bi-heart-fill text-white fs-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-1">
+              <a href="posts.html#Album023"><img class="img-fluid " src="/content/Dp-Album023.jpg" alt="Album 023"></a>
+            </div>
+            <div class="col-4 p-1">
+              <a href="posts.html#Album024"><img class="img-fluid " src="/content/Dp-Album024.jpg" alt="Album 023"></a>
+            </div>
+            <div class="col-4 p-1">
+              <a href="posts.html#Album033"><img class="img-fluid " src="/content/Dp-Album033.jpg" alt="Album 033"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-1">
+              <a href="posts.html#perpetuo"><img class="img-fluid " src="/content/perpetuo.webp" alt="perpetuo"></a>
+            </div>
+            <div class="col-4 p-1">
+              <a href="posts.html#albumes"><img class="img-fluid " src="/content/albumes.webp" alt="albumes"></a>
+            </div>
+            <div class="col-4 p-1">
+              <a href="posts.html#caja-iman"><img class="img-fluid " src="/content/caja-iman.webp" alt="caja-iman"></a>
+            </div>
+            <div class="col-4 p-1">
+              <a href="posts.html#caja-iman"><img class="img-fluid " src="/content/caja-iman.webp" alt="caja-iman"></a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
